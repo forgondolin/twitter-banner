@@ -57,21 +57,9 @@ spec:
         - mountPath: /etc/grafana/provisioning/dashboards
           name: grafana-dashboards
           readOnly: false          
-        - mountPath: /grafana-dashboard-definitions/0/wiard
-          name: wiard
-          readOnly: false             
-        - mountPath: /grafana-dashboard-definitions/0/honglilai
-          name: honglilai
-          readOnly: false        
-        - mountPath: /grafana-dashboard-definitions/0/paulustm
-          name: paulustm
-          readOnly: false   
-        - mountPath: /grafana-dashboard-definitions/0/timvandekeer
-          name: timvandekeer
-          readOnly: false        
-        - mountPath: /grafana-dashboard-definitions/0/bramklinkenberg
-          name: bramklinkenberg
-          readOnly: false                    
+        - mountPath: /grafana-dashboard-definitions/0/kalves
+          name: kalves
+          readOnly: false                                 
       nodeSelector:
         beta.kubernetes.io/os: linux
       securityContext:
@@ -84,22 +72,7 @@ spec:
         name: grafana-storage
       - name: grafana-datasources
         secret:
-          secretName: grafana-datasources
+          secretName: grafana-datasources    
       - configMap:
-          name: grafana-dashboards
-        name: grafana-dashboards          
-      - configMap:
-          name: honglilai
-        name: honglilai
-      - configMap:
-          name: paulustm
-        name: paulustm
-      - configMap:
-          name: timvandekeer
-        name: timvandekeer
-      - configMap:
-          name: bramklinkenberg
-        name: bramklinkenberg     
-      - configMap:
-          name: wiard
-        name: wiard            
+          name: kalves
+        name: kalves            

@@ -11,8 +11,7 @@
     scrape_interval: 50s
     static_configs:
     - targets:
-      - RijWiard
-      - fullstaq
+      - kalves_rohan
   - job_name: 'json_exporter'
     static_configs:
     - targets: ['json-exporter-deployment:7979']
