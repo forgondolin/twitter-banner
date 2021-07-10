@@ -72,7 +72,10 @@ spec:
         name: grafana-storage
       - name: grafana-datasources
         secret:
-          secretName: grafana-datasources    
+          secretName: grafana-datasources
+      - configMap:
+          name: grafana-dashboards
+        name: grafana-dashboards          
       - configMap:
           name: kalves
         name: kalves            
