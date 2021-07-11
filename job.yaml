@@ -25,5 +25,5 @@ spec:
               value: xxx
             - name: image_url
               ## Example; replace it
-              value: http://admin:admin@grafana:3000/render/d-solo/wR0Yf26Gk/twitter-followers?orgId=1&panelId=2&width=1500&height=500&tz=Europe%2FAmsterdam  
+              value: http://admin:admin@grafana:3000/render/d-solo/wR0Yf26Gk/twitter-followers?orgId=1&panelId=2&width=1500&height=500&tz=America%2FNew_York  
           restartPolicy: OnFailure
